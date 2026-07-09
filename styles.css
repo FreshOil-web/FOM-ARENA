@@ -1952,106 +1952,129 @@ background:none;
 }
 
 /*=========================================
-            CONTACT FORM
+        CONTACT BUTTONS
 =========================================*/
 
-.contact-form{
+.contact-buttons{
 
-    background:#ffffff;
+display:flex;
 
-    padding:40px;
+flex-direction:column;
 
-    border-radius:20px;
+gap:20px;
 
-    box-shadow:0 12px 30px rgba(0,0,0,.12);
-
-}
-
-.contact-form h2{
-
-    color:#6B0F0F;
-
-    margin-bottom:25px;
+margin-top:40px;
 
 }
 
-.contact-form form{
+.contact-buttons a{
 
-    display:flex;
+display:block;
 
-    flex-direction:column;
+text-align:center;
 
-}
+padding:18px;
 
-.contact-form input,
-.contact-form textarea{
+border-radius:50px;
 
-    width:100%;
+font-size:18px;
 
-    padding:16px;
+font-weight:600;
 
-    margin-bottom:18px;
+transition:.35s;
 
-    border:2px solid #ddd;
-
-    border-radius:10px;
-
-    font-size:16px;
-
-    font-family:'Poppins',sans-serif;
-
-    transition:.3s;
+color:white;
 
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus{
+.whatsapp-btn{
 
-    outline:none;
-
-    border-color:#C79A24;
-
-    box-shadow:0 0 10px rgba(199,154,36,.3);
+background:#25D366;
 
 }
 
-.contact-form textarea{
+.whatsapp-btn:hover{
 
-    resize:vertical;
+background:#1EBE5D;
 
-    min-height:180px;
-
-}
-
-.contact-form button{
-
-    background:#B30000;
-
-    color:white;
-
-    border:none;
-
-    padding:16px;
-
-    border-radius:50px;
-
-    font-size:18px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.4s;
+transform:translateY(-5px);
 
 }
 
-.contact-form button:hover{
+.call-btn{
 
-    background:#6B0F0F;
-
-    transform:translateY(-5px);
+background:#B30000;
 
 }
+
+.call-btn:hover{
+
+background:#6B0F0F;
+
+transform:translateY(-5px);
+
+}
+
+.facebook-btn{
+
+background:#1877F2;
+
+}
+
+.facebook-btn:hover{
+
+background:#0E5EC9;
+
+transform:translateY(-5px);
+
+}
+
+/*=========================================
+        FLOATING WHATSAPP
+=========================================*/
+
+.floating-whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+left:25px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:32px;
+
+color:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,.30);
+
+z-index:9999;
+
+transition:.4s;
+
+}
+
+.floating-whatsapp:hover{
+
+transform:scale(1.15);
+
+background:#1EBE5D;
+
+}
+
 
 /*=========================================
             SERVICE TIMES
