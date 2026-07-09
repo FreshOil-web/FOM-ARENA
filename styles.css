@@ -1878,48 +1878,54 @@ background:none;
 
 .contact-section{
 
-    background:white;
-    padding:90px 8%;
-
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
+    grid-template-columns:45% 55%;
+    gap:40px;
     align-items:start;
+
+    padding:80px 8%;
+
+    background:white;
 
 }
 
-/* Contact Information */
+/*==============================
+        LEFT SIDE
+==============================*/
 
 .contact-info{
 
-    background:#ffffff;
+    background:#C79A24;
+
+    color:white;
 
     padding:40px;
 
     border-radius:20px;
 
-    box-shadow:0 12px 30px rgba(0,0,0,.12);
-
-    border-left:8px solid #C79A24;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
 
 }
 
 .contact-info h2{
 
-    color:#6B0F0F;
+    font-family:'Cinzel', serif;
+
+    color:white;
+
+    font-size:38px;
 
     margin-bottom:20px;
-
-    font-size:36px;
 
 }
 
 .contact-info h3{
 
-    color:#B30000;
+    color:#6B0F0F;
 
-    margin-top:25px;
-    margin-bottom:10px;
+    margin-top:28px;
+
+    margin-bottom:8px;
 
     font-size:22px;
 
@@ -1927,21 +1933,23 @@ background:none;
 
 .contact-info p{
 
-    color:#444;
-
-    margin-bottom:12px;
+    color:white;
 
     line-height:1.8;
+
+    margin-bottom:12px;
 
 }
 
 .contact-info a{
 
-    color:#B30000;
+    color:white;
 
     text-decoration:none;
 
     font-weight:600;
+
+    transition:.3s;
 
 }
 
@@ -1951,130 +1959,267 @@ background:none;
 
 }
 
-/*=========================================
-        CONTACT BUTTONS
-=========================================*/
+/*==============================
+        BUTTONS
+==============================*/
 
 .contact-buttons{
 
-display:flex;
+    margin-top:35px;
 
-flex-direction:column;
+    display:flex;
 
-gap:20px;
+    flex-direction:column;
 
-margin-top:40px;
+    gap:18px;
 
 }
 
 .contact-buttons a{
 
-display:block;
+    display:flex;
 
-text-align:center;
+    justify-content:center;
 
-padding:18px;
+    align-items:center;
 
-border-radius:50px;
+    gap:10px;
 
-font-size:18px;
+    padding:16px;
 
-font-weight:600;
+    border-radius:50px;
 
-transition:.35s;
+    font-size:17px;
 
-color:white;
+    font-weight:600;
+
+    color:white;
+
+    transition:.35s;
 
 }
 
 .whatsapp-btn{
 
-background:#25D366;
+    background:#25D366;
 
 }
 
 .whatsapp-btn:hover{
 
-background:#1EBE5D;
+    background:#1EBE5D;
 
-transform:translateY(-5px);
+    transform:translateY(-5px);
 
 }
 
 .call-btn{
 
-background:#B30000;
+    background:#B30000;
 
 }
 
 .call-btn:hover{
 
-background:#6B0F0F;
+    background:#6B0F0F;
 
-transform:translateY(-5px);
+    transform:translateY(-5px);
 
 }
 
 .facebook-btn{
 
-background:#1877F2;
+    background:#1877F2;
 
 }
 
 .facebook-btn:hover{
 
-background:#0E5EC9;
+    background:#0E5EC9;
 
-transform:translateY(-5px);
+    transform:translateY(-5px);
 
 }
 
-/*=========================================
+/*==============================
+        RIGHT SIDE
+==============================*/
+
+.map-section{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+}
+
+.map-section h2{
+
+    color:#6B0F0F;
+
+    font-family:'Cinzel', serif;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.map-section iframe{
+
+    width:100%;
+
+    height:650px;
+
+    border:none;
+
+    border-radius:15px;
+
+}
+
+/*==============================
+        INVITATION
+==============================*/
+
+.visit-message{
+
+    background:#C79A24;
+
+    padding:90px 8%;
+
+    text-align:center;
+
+}
+
+.visit-message h2{
+
+    color:#6B0F0F;
+
+    font-family:'Cinzel', serif;
+
+    font-size:42px;
+
+}
+
+.visit-message p{
+
+    max-width:900px;
+
+    margin:25px auto;
+
+    color:white;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+/*==============================
         FLOATING WHATSAPP
-=========================================*/
+==============================*/
 
 .floating-whatsapp{
 
-position:fixed;
+    position:fixed;
 
-bottom:25px;
+    bottom:25px;
 
-left:25px;
+    right:25px;
 
-width:65px;
+    width:65px;
 
-height:65px;
+    height:65px;
 
-background:#25D366;
+    background:#25D366;
 
-border-radius:50%;
+    border-radius:50%;
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-align-items:center;
+    align-items:center;
 
-font-size:32px;
+    font-size:34px;
 
-color:white;
+    color:white;
 
-box-shadow:0 10px 25px rgba(0,0,0,.30);
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
 
-z-index:9999;
+    z-index:9999;
 
-transition:.4s;
+    transition:.4s;
 
 }
 
 .floating-whatsapp:hover{
 
-transform:scale(1.15);
+    transform:scale(1.15);
 
-background:#1EBE5D;
+    background:#1EBE5D;
 
 }
 
+/*==============================
+        RESPONSIVE
+==============================*/
+
+@media(max-width:900px){
+
+    .contact-section{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .map-section{
+
+        margin-top:30px;
+
+    }
+
+    .map-section iframe{
+
+        height:420px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .contact-info{
+
+        padding:30px;
+
+    }
+
+    .contact-info h2{
+
+        font-size:30px;
+
+    }
+
+    .contact-buttons a{
+
+        font-size:16px;
+
+        padding:15px;
+
+    }
+
+    .map-section iframe{
+
+        height:320px;
+
+    }
+
+}
 
 /*=========================================
             SERVICE TIMES
