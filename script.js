@@ -1,17 +1,21 @@
 //=========================================
-// MOBILE MENU
+// LOGO MENU TOGGLE
 //=========================================
 
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector("nav");
+const logoToggle = document.getElementById("logoToggle");
+const nav = document.getElementById("mainNav");
 
-if(menuToggle){
+if (logoToggle && nav) {
 
-menuToggle.addEventListener("click",()=>{
+    logoToggle.addEventListener("click", function () {
 
-nav.classList.toggle("active");
+        if (window.innerWidth <= 900) {
 
-});
+            nav.classList.toggle("show-nav");
+
+        }
+
+    });
 
 }
 
