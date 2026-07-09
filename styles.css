@@ -1,0 +1,2710 @@
+/*======================================================
+    FRESH OIL MINISTRIES
+    Main Stylesheet
+=======================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*======================================================
+                    RESET
+=======================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#111;
+    background:#C79A24;
+    overflow-x:hidden;
+}
+
+/*======================================================
+                    COLOURS
+=======================================================*/
+
+:root{
+
+    --gold:#C79A24;
+
+    --gold-light:#DDB449;
+
+    --red:#B30000;
+
+    --maroon:#6B0F0F;
+
+    --white:#ffffff;
+
+    --black:#111111;
+
+    --grey:#666666;
+
+    --shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+/*======================================================
+                    TYPOGRAPHY
+=======================================================*/
+
+h1,
+h2,
+h3,
+h4{
+    font-family:'Cinzel',serif;
+}
+
+p{
+    color:#111;
+    line-height:1.9;
+    font-size:17px;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+ul{
+    list-style:none;
+}
+
+/*======================================================
+                    BUTTONS
+=======================================================*/
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    background:#B30000;
+
+    color:white;
+
+    padding:15px 38px;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+.btn:hover{
+
+    background:#6B0F0F;
+
+    transform:translateY(-6px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+}
+
+/*======================================================
+                WHITE DRAPE SECTION
+=======================================================*/
+
+.white-section{
+
+    background:white;
+
+    width:100%;
+
+    padding:90px 8%;
+
+    border-radius:90px 90px 0 0;
+
+    position:relative;
+
+}
+
+.white-section::before{
+
+content:"";
+
+position:absolute;
+
+top:-70px;
+
+left:0;
+
+width:100%;
+
+height:70px;
+
+background:white;
+
+border-radius:0 0 50% 50%;
+
+}
+
+/*======================================================
+                GOLD SECTION
+=======================================================*/
+
+.gold-section{
+
+background:#C79A24;
+
+padding:90px 8%;
+
+}
+
+/*======================================================
+                    GOLD LINE
+=======================================================*/
+
+.gold-line{
+
+width:110px;
+
+height:5px;
+
+margin:18px auto 40px;
+
+background:#B30000;
+
+border-radius:20px;
+
+}
+
+/*======================================================
+                    HEADER
+=======================================================*/
+
+header{
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+background:white;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:15px 8%;
+
+box-shadow:0 3px 15px rgba(0,0,0,.1);
+
+}
+
+/* Logo */
+
+.logo-area{
+
+display:flex;
+
+align-items:center;
+
+}
+
+.logo-area img{
+
+width:75px;
+
+margin-right:18px;
+
+border-radius:50%;
+
+}
+
+.logo-area h1{
+
+font-size:28px;
+
+color:#6B0F0F;
+
+}
+
+.logo-area p{
+
+font-size:13px;
+
+color:#C79A24;
+
+font-weight:500;
+
+}
+
+/*======================================================
+                    NAVIGATION
+=======================================================*/
+
+nav ul{
+
+display:flex;
+
+gap:35px;
+
+}
+
+nav a{
+
+position:relative;
+
+color:#111;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#B30000;
+
+}
+
+nav a.active{
+
+color:#C79A24;
+
+}
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+height:3px;
+
+width:0;
+
+background:#C79A24;
+
+transition:.4s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+/*======================================================
+                    PAGE BANNER
+=======================================================*/
+
+.page-banner{
+
+background:
+
+linear-gradient(rgba(0,0,0,.60),
+
+rgba(0,0,0,.60)),
+
+url(images/banner.jpg);
+
+background-size:cover;
+
+background-position:center;
+
+text-align:center;
+
+padding:140px 30px;
+
+color:white;
+
+}
+
+.page-banner h1{
+
+font-size:58px;
+
+margin-bottom:20px;
+
+color:white;
+
+}
+
+.page-banner p{
+
+font-size:22px;
+
+color:white;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+/*======================================================
+                CONTENT SECTION
+=======================================================*/
+
+.content-section{
+
+padding:90px 8%;
+
+text-align:center;
+
+background:white;
+
+}
+
+.content-section h2{
+
+font-size:42px;
+
+color:#6B0F0F;
+
+margin-bottom:15px;
+
+}
+
+.content-section p{
+
+max-width:950px;
+
+margin:auto;
+
+}
+
+/*======================================================
+                    FOOTER
+=======================================================*/
+
+footer{
+
+background:#6B0F0F;
+
+color:white;
+
+text-align:center;
+
+padding:60px 20px;
+
+}
+
+footer h3{
+
+color:#C79A24;
+
+margin-bottom:20px;
+
+font-size:30px;
+
+}
+
+footer p{
+
+color:white;
+
+margin-bottom:8px;
+
+}
+
+footer .copyright{
+
+margin-top:30px;
+
+font-size:15px;
+
+border-top:1px solid rgba(255,255,255,.25);
+
+padding-top:25px;
+
+}
+
+/*======================================================
+                    HERO SECTION
+=======================================================*/
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:92vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url(images/hero.jpg);
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+.overlay{
+
+    color:white;
+
+    animation:fadeUp 1.5s ease;
+
+}
+
+.overlay h2{
+
+    color:#C79A24;
+
+    letter-spacing:6px;
+
+    margin-bottom:15px;
+
+    font-size:30px;
+
+}
+
+.overlay h1{
+
+    font-size:70px;
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+.overlay p{
+
+    color:white;
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    line-height:2;
+
+}
+
+/*======================================================
+                    WELCOME
+=======================================================*/
+
+.welcome{
+
+    background:white;
+
+    padding:100px 10%;
+
+    text-align:center;
+
+    border-radius:100px 100px 0 0;
+
+    margin-top:-50px;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.welcome h2{
+
+    color:#6B0F0F;
+
+    font-size:42px;
+
+}
+
+.welcome p{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+/*======================================================
+                SCRIPTURE SECTION
+=======================================================*/
+
+.scripture{
+
+    background:#C79A24;
+
+    text-align:center;
+
+    padding:90px 8%;
+
+}
+
+.scripture h2{
+
+    color:#6B0F0F;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.scripture p{
+
+    font-size:28px;
+
+    color:black;
+
+    font-style:italic;
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.scripture h3{
+
+    margin-top:30px;
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+/*======================================================
+                SERVICES
+=======================================================*/
+
+.services{
+
+    background:white;
+
+    padding:100px 8%;
+
+    text-align:center;
+
+}
+
+.services h2{
+
+    font-size:42px;
+
+    color:#6B0F0F;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    margin-top:60px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-top:7px solid #C79A24;
+
+    border-radius:18px;
+
+    padding:40px 30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    border-top:7px solid #B30000;
+
+}
+
+.card h3{
+
+    color:#6B0F0F;
+
+    margin-bottom:20px;
+
+    font-size:25px;
+
+}
+
+.card p{
+
+    color:#333;
+
+}
+
+/*======================================================
+                VISIT US
+=======================================================*/
+
+.visit{
+
+    background:#C79A24;
+
+    padding:100px 8%;
+
+    text-align:center;
+
+}
+
+.visit h2{
+
+    color:#6B0F0F;
+
+    font-size:42px;
+
+}
+
+.visit p{
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+}
+
+/*======================================================
+            QUICK INFO BOXES
+=======================================================*/
+
+.info-boxes{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.info-box{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.info-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.info-box h3{
+
+    color:#B30000;
+
+    margin-bottom:15px;
+
+}
+
+.info-box p{
+
+    color:#333;
+
+}
+
+/*======================================================
+                HERO BUTTON
+=======================================================*/
+
+.hero .btn{
+
+    margin-top:40px;
+
+    font-size:18px;
+
+    padding:18px 45px;
+
+}
+
+/*======================================================
+                SECTION SPACING
+=======================================================*/
+
+section{
+
+    position:relative;
+
+}
+
+/*======================================================
+                ANIMATIONS
+=======================================================*/
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*======================================================
+                    ABOUT PAGE
+=======================================================*/
+
+/* ABOUT INTRODUCTION */
+
+.content-section{
+
+    width:100%;
+    padding:90px 8%;
+    text-align:center;
+    background:white;
+
+}
+
+.content-section h2{
+
+    font-size:42px;
+    color:#6B0F0F;
+    margin-bottom:15px;
+
+}
+
+.content-section p{
+
+    max-width:950px;
+    margin:auto;
+    line-height:2;
+    font-size:18px;
+
+}
+
+/* FOUNDATION */
+
+.foundation{
+
+    background:#C79A24;
+    padding:90px 8%;
+    text-align:center;
+
+}
+
+.foundation h2{
+
+    color:#6B0F0F;
+
+}
+
+.foundation p{
+
+    max-width:900px;
+    margin:auto;
+
+}
+
+/* MISSION */
+
+.mission-box{
+
+    background:#C79A24;
+
+    border-left:10px solid #B30000;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    margin:50px auto;
+
+    max-width:1000px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.mission-box p{
+
+    font-size:20px;
+
+    font-weight:500;
+
+}
+
+/* VISION */
+
+.vision-box{
+
+    background:white;
+
+    border:5px solid #C79A24;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    max-width:1000px;
+
+    margin:50px auto;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.vision-box p{
+
+    font-size:20px;
+
+    font-weight:500;
+
+}
+
+/*======================================================
+                    CORE VALUES
+=======================================================*/
+
+.values-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    margin-top:60px;
+
+}
+
+.value-card{
+
+    background:white;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    border-bottom:8px solid #C79A24;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-12px);
+
+    border-bottom:8px solid #B30000;
+
+}
+
+.value-card h3{
+
+    color:#6B0F0F;
+
+    margin-bottom:18px;
+
+    font-size:24px;
+
+}
+
+.value-card p{
+
+    color:#444;
+
+}
+
+/*======================================================
+                JOIN US SECTION
+=======================================================*/
+
+.join-section{
+
+    background:#C79A24;
+
+    text-align:center;
+
+    padding:90px 8%;
+
+}
+
+.join-section h2{
+
+    color:#6B0F0F;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.join-section p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+}
+
+/*======================================================
+            ABOUT IMAGE (Optional)
+=======================================================*/
+
+.about-image{
+
+    width:100%;
+
+    margin-top:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    width:85%;
+
+    border-radius:25px;
+
+    border:8px solid white;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.20);
+
+}
+
+/*======================================================
+                VALUE ICONS
+=======================================================*/
+
+.value-card i{
+
+    font-size:45px;
+
+    color:#C79A24;
+
+    margin-bottom:20px;
+
+}
+
+/*======================================================
+                MINISTRIES PAGE
+=======================================================*/
+
+.ministry-grid{
+
+    width:100%;
+
+    padding:80px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+    background:white;
+
+}
+
+/* Individual Ministry Card */
+
+.ministry-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+    border-top:8px solid #C79A24;
+
+    transition:all .4s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Gold Glow */
+
+.ministry-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transition:.8s;
+
+}
+
+.ministry-card:hover::before{
+
+    left:100%;
+
+}
+
+.ministry-card:hover{
+
+    transform:translateY(-12px);
+
+    border-top:8px solid #B30000;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+
+}
+
+.ministry-card h3{
+
+    color:#6B0F0F;
+
+    margin:20px 0;
+
+    font-size:26px;
+
+}
+
+.ministry-card p{
+
+    color:#444;
+
+    line-height:1.8;
+
+}
+
+/*======================================================
+                MINISTRY ICON
+=======================================================*/
+
+.ministry-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#C79A24;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    color:white;
+
+    transition:.4s;
+
+}
+
+.ministry-card:hover .ministry-icon{
+
+    background:#B30000;
+
+    transform:rotate(360deg);
+
+}
+
+/*======================================================
+            MINISTRY INVITATION
+=======================================================*/
+
+.join-ministry{
+
+    background:#C79A24;
+
+    padding:90px 8%;
+
+    text-align:center;
+
+}
+
+.join-ministry h2{
+
+    font-size:42px;
+
+    color:#6B0F0F;
+
+}
+
+.join-ministry p{
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    font-size:18px;
+
+}
+
+/*======================================================
+            WHY SERVE SECTION
+=======================================================*/
+
+.serve-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.serve-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.serve-card:hover{
+
+    transform:scale(1.05);
+
+}
+
+.serve-card h3{
+
+    color:#B30000;
+
+    margin-bottom:15px;
+
+}
+
+.serve-card p{
+
+    color:#444;
+
+}
+
+/*======================================================
+            MINISTRY QUOTE
+=======================================================*/
+
+.ministry-quote{
+
+    background:white;
+
+    padding:100px 10%;
+
+    text-align:center;
+
+}
+
+.ministry-quote blockquote{
+
+    font-size:28px;
+
+    color:#6B0F0F;
+
+    font-family:'Cinzel',serif;
+
+    font-style:italic;
+
+    line-height:1.7;
+
+}
+
+.ministry-quote span{
+
+    display:block;
+
+    margin-top:25px;
+
+    color:#B30000;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+/*======================================================
+                    GALLERY PAGE
+======================================================*/
+
+/* INTRODUCTION */
+
+.gallery-intro{
+
+    background:white;
+
+    padding:90px 8%;
+
+    text-align:center;
+
+}
+
+.gallery-intro h2{
+
+    font-size:42px;
+
+    color:#6B0F0F;
+
+    margin-bottom:20px;
+
+}
+
+.gallery-intro p{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+/*=========================================
+            GALLERY TITLES
+=========================================*/
+
+.gallery-title{
+
+    background:#C79A24;
+
+    color:#6B0F0F;
+
+    text-align:center;
+
+    font-size:34px;
+
+    padding:30px;
+
+    margin:0;
+
+}
+
+/*=========================================
+        GALLERY ROW CONTAINER
+=========================================*/
+
+.gallery-row{
+
+    width:100%;
+
+    overflow:hidden;
+
+    background:white;
+
+    padding:30px 0;
+
+}
+
+/*=========================================
+        MOVING TRACK
+=========================================*/
+
+.gallery-track{
+
+    display:flex;
+
+    width:max-content;
+
+    animation:scrollLeft 60s linear infinite;
+
+}
+
+.gallery-track.reverse{
+
+    animation:scrollRight 60s linear infinite;
+
+}
+
+/*=========================================
+            IMAGE DESIGN
+=========================================*/
+
+.gallery-track img{
+
+    width:320px;
+
+    height:230px;
+
+    object-fit:cover;
+
+    margin:15px;
+
+    border-radius:22px;
+
+    border:6px solid #C79A24;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.20);
+
+    transition:.5s;
+
+    cursor:pointer;
+
+}
+
+/* Hover Effect */
+
+.gallery-track img:hover{
+
+    transform:scale(1.08);
+
+    border-color:#B30000;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.30);
+
+}
+
+/*=========================================
+        CONTINUOUS ANIMATION
+=========================================*/
+
+@keyframes scrollLeft{
+
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(-50%);
+
+}
+
+}
+
+@keyframes scrollRight{
+
+0%{
+
+transform:translateX(-50%);
+
+}
+
+100%{
+
+transform:translateX(0);
+
+}
+
+}
+
+/* Pause Animation */
+
+.gallery-track:hover{
+
+animation-play-state:paused;
+
+}
+
+/*=========================================
+        PHOTO CAPTION
+=========================================*/
+
+.gallery-caption{
+
+    text-align:center;
+
+    background:white;
+
+    padding:70px 10%;
+
+}
+
+.gallery-caption h2{
+
+    color:#6B0F0F;
+
+    margin-bottom:25px;
+
+    font-size:42px;
+
+}
+
+.gallery-caption p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:18px;
+
+}
+
+/*=========================================
+        VISIT INVITATION
+=========================================*/
+
+.visit-gallery{
+
+    background:#C79A24;
+
+    text-align:center;
+
+    padding:90px 8%;
+
+}
+
+.visit-gallery h2{
+
+    color:#6B0F0F;
+
+    font-size:42px;
+
+}
+
+.visit-gallery p{
+
+    max-width:900px;
+
+    margin:30px auto;
+
+}
+
+/*=========================================
+        LIGHT GLOW
+=========================================*/
+
+.gallery-track img::selection{
+
+background:none;
+
+}
+
+.speed-fast{
+    animation-duration:45s !important;
+}
+
+.speed-medium{
+    animation-duration:60s !important;
+}
+
+.speed-slow{
+    animation-duration:80s !important;
+}
+
+.speed-extra{
+    animation-duration:95s !important;
+}
+
+/*======================================================
+                TESTIMONIES PAGE
+======================================================*/
+
+.testimony-section{
+
+    background:white;
+    padding:90px 8%;
+
+}
+
+.testimony-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+    margin-top:50px;
+
+}
+
+.testimony-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+    border-top:8px solid #C79A24;
+
+}
+
+.testimony-card:hover{
+
+    transform:translateY(-12px);
+
+    border-top:8px solid #B30000;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.20);
+
+}
+
+.testimony-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transition:.8s;
+
+}
+
+.testimony-card:hover::before{
+
+    left:120%;
+
+}
+
+.quote{
+
+    font-size:65px;
+
+    color:#C79A24;
+
+    line-height:1;
+
+}
+
+.testimony-card h2{
+
+    margin:20px 0;
+
+    color:#6B0F0F;
+
+    font-size:26px;
+
+    text-align:center;
+
+}
+
+.testimony-card p{
+
+    line-height:1.9;
+
+    color:#444;
+
+    margin-bottom:25px;
+
+}
+
+.testimony-card h3{
+
+    color:#B30000;
+
+    text-align:right;
+
+    font-size:18px;
+
+}
+
+/*======================================================
+            CATEGORY BADGES
+======================================================*/
+
+.badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    margin-bottom:18px;
+
+}
+
+.breakthrough{
+
+    background:#B30000;
+
+}
+
+.healing{
+
+    background:#2E8B57;
+
+}
+
+.deliverance{
+
+    background:#6B0F0F;
+
+}
+
+.restoration{
+
+    background:#C79A24;
+
+}
+
+.favour{
+
+    background:#8B0000;
+
+}
+
+.salvation{
+
+    background:#1E90FF;
+
+}
+
+.provision{
+
+    background:#DAA520;
+
+}
+
+.family{
+
+    background:#CD5C5C;
+
+}
+
+.business{
+
+    background:#708090;
+
+}
+
+.academic{
+
+    background:#4682B4;
+
+}
+
+.employment{
+
+    background:#8B4513;
+
+}
+
+.thanksgiving{
+
+    background:#556B2F;
+
+}
+
+/*======================================================
+            SHARE TESTIMONY
+======================================================*/
+
+.share-testimony{
+
+    background:#C79A24;
+
+    text-align:center;
+
+    padding:90px 8%;
+
+}
+
+.share-testimony h2{
+
+    color:#6B0F0F;
+
+    font-size:42px;
+
+}
+
+.share-testimony p{
+
+    max-width:850px;
+
+    margin:30px auto;
+
+}
+
+/*======================================================
+            TESTIMONY SCRIPTURE
+======================================================*/
+
+.testimony-scripture{
+
+    background:white;
+
+    text-align:center;
+
+    padding:90px 10%;
+
+}
+
+.testimony-scripture blockquote{
+
+    font-size:30px;
+
+    color:#6B0F0F;
+
+    font-family:'Cinzel',serif;
+
+    font-style:italic;
+
+    line-height:1.8;
+
+}
+
+.testimony-scripture span{
+
+    display:block;
+
+    margin-top:25px;
+
+    color:#B30000;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+/*======================================================
+        HOVER ICON EFFECT
+======================================================*/
+
+.testimony-card:hover .quote{
+
+    color:#B30000;
+
+    transform:scale(1.1);
+
+    transition:.4s;
+
+}
+
+/*======================================================
+                    CONTACT PAGE
+======================================================*/
+
+.contact-section{
+
+    background:white;
+    padding:90px 8%;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:start;
+
+}
+
+/* Contact Information */
+
+.contact-info{
+
+    background:#ffffff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+    border-left:8px solid #C79A24;
+
+}
+
+.contact-info h2{
+
+    color:#6B0F0F;
+
+    margin-bottom:20px;
+
+    font-size:36px;
+
+}
+
+.contact-info h3{
+
+    color:#B30000;
+
+    margin-top:25px;
+    margin-bottom:10px;
+
+    font-size:22px;
+
+}
+
+.contact-info p{
+
+    color:#444;
+
+    margin-bottom:12px;
+
+    line-height:1.8;
+
+}
+
+.contact-info a{
+
+    color:#B30000;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.contact-info a:hover{
+
+    color:#6B0F0F;
+
+}
+
+/*=========================================
+            CONTACT FORM
+=========================================*/
+
+.contact-form{
+
+    background:#ffffff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.contact-form h2{
+
+    color:#6B0F0F;
+
+    margin-bottom:25px;
+
+}
+
+.contact-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-bottom:18px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:#C79A24;
+
+    box-shadow:0 0 10px rgba(199,154,36,.3);
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+.contact-form button{
+
+    background:#B30000;
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.contact-form button:hover{
+
+    background:#6B0F0F;
+
+    transform:translateY(-5px);
+
+}
+
+/*=========================================
+            SERVICE TIMES
+=========================================*/
+
+.service-times{
+
+    background:#C79A24;
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+.service-times h2{
+
+    color:#6B0F0F;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.service-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.service-card h3{
+
+    color:#B30000;
+
+    margin-bottom:15px;
+
+}
+
+.service-card p{
+
+    color:#444;
+
+}
+
+/*=========================================
+            MAP SECTION
+=========================================*/
+
+.map-section{
+
+    background:white;
+
+    padding:90px 8%;
+
+    text-align:center;
+
+}
+
+.map-section h2{
+
+    color:#6B0F0F;
+
+    margin-bottom:25px;
+
+    font-size:40px;
+
+}
+
+.map-section iframe{
+
+    width:100%;
+
+    height:500px;
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/*=========================================
+            VISIT MESSAGE
+=========================================*/
+
+.visit-message{
+
+    background:#C79A24;
+
+    padding:90px 10%;
+
+    text-align:center;
+
+}
+
+.visit-message h2{
+
+    color:#6B0F0F;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.visit-message p{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+/*=========================================
+        SOCIAL MEDIA
+=========================================*/
+
+.social-icons{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.social-icons a{
+
+    background:#B30000;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    background:#6B0F0F;
+
+    transform:translateY(-5px);
+
+}
+
+/*======================================================
+                RESPONSIVE DESIGN
+======================================================*/
+
+/* Hide mobile menu button on desktop */
+
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:#6B0F0F;
+    cursor:pointer;
+}
+
+/*=========================
+        LARGE TABLETS
+=========================*/
+
+@media(max-width:1200px){
+
+.hero h1{
+    font-size:55px;
+}
+
+.page-banner h1{
+    font-size:48px;
+}
+
+.cards,
+.values-grid,
+.ministry-grid,
+.testimony-container,
+.service-grid,
+.info-boxes,
+.serve-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery-track img{
+
+    width:280px;
+    height:200px;
+
+}
+
+}
+
+/*=========================
+        TABLETS
+=========================*/
+
+@media(max-width:992px){
+
+header{
+
+    padding:15px 5%;
+
+}
+
+.logo-area img{
+
+    width:60px;
+
+}
+
+.logo-area h1{
+
+    font-size:22px;
+
+}
+
+nav{
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    display:none;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+nav.active{
+
+    display:block;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    gap:0;
+
+}
+
+nav ul li{
+
+    border-bottom:1px solid #eee;
+
+}
+
+nav ul li a{
+
+    display:block;
+
+    padding:18px;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+.contact-section{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero{
+
+    height:75vh;
+
+}
+
+.hero h1{
+
+    font-size:45px;
+
+}
+
+.overlay p{
+
+    font-size:18px;
+
+}
+
+.page-banner{
+
+    padding:100px 20px;
+
+}
+
+.page-banner h1{
+
+    font-size:42px;
+
+}
+
+.cards,
+.values-grid,
+.ministry-grid,
+.testimony-container,
+.service-grid,
+.info-boxes,
+.serve-grid{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+/*=========================
+        MOBILE
+=========================*/
+
+@media(max-width:768px){
+
+.hero{
+
+    background-attachment:scroll;
+
+}
+
+.hero h1{
+
+    font-size:36px;
+
+}
+
+.overlay h2{
+
+    font-size:22px;
+
+}
+
+.overlay p{
+
+    font-size:16px;
+
+}
+
+.page-banner h1{
+
+    font-size:36px;
+
+}
+
+.page-banner p{
+
+    font-size:17px;
+
+}
+
+.content-section,
+.white-section,
+.gold-section,
+.gallery-intro,
+.scripture,
+.services,
+.visit,
+.foundation,
+.join-section,
+.contact-section,
+.share-testimony,
+.visit-message,
+.map-section{
+
+    padding:70px 25px;
+
+}
+
+.cards,
+.values-grid,
+.ministry-grid,
+.testimony-container,
+.service-grid,
+.info-boxes,
+.serve-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-track img{
+
+    width:220px;
+
+    height:170px;
+
+    margin:8px;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+}
+
+iframe{
+
+    height:350px;
+
+}
+
+footer{
+
+    padding:40px 20px;
+
+}
+
+}
+
+/*=========================
+    SMALL PHONES
+=========================*/
+
+@media(max-width:480px){
+
+.logo-area img{
+
+    width:50px;
+
+}
+
+.logo-area h1{
+
+    font-size:18px;
+
+}
+
+.logo-area p{
+
+    font-size:11px;
+
+}
+
+.hero{
+
+    height:65vh;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.overlay h2{
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+}
+
+.overlay p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    padding:14px 28px;
+
+    font-size:15px;
+
+}
+
+.page-banner{
+
+    padding:80px 20px;
+
+}
+
+.page-banner h1{
+
+    font-size:30px;
+
+}
+
+.gallery-track img{
+
+    width:180px;
+
+    height:140px;
+
+}
+
+.quote{
+
+    font-size:50px;
+
+}
+
+}
+
+/*=========================================
+        SCROLL ANIMATION
+=========================================*/
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:all .8s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/*=========================================
+        SCROLL TO TOP
+=========================================*/
+
+#topBtn{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#B30000;
+
+color:white;
+
+font-size:24px;
+
+cursor:pointer;
+
+display:none;
+
+z-index:9999;
+
+box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+background:#6B0F0F;
+
+transform:translateY(-5px);
+
+}
+
+/*=========================================
+        LIGHTBOX
+=========================================*/
+
+#lightbox{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.92);
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+padding:20px;
+
+}
+
+#lightbox.active{
+
+display:flex;
+
+}
+
+#lightbox img{
+
+max-width:90%;
+
+max-height:90%;
+
+border:8px solid white;
+
+border-radius:15px;
+
+}
