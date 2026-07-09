@@ -1,19 +1,38 @@
-//=========================================
-// LOGO MENU TOGGLE
-//=========================================
+// =========================================
+// LOGO MENU
+// =========================================
 
-const logoToggle = document.getElementById("logoToggle");
-const nav = document.getElementById("mainNav");
+const logo = document.getElementById("logoToggle");
+const menu = document.getElementById("mainNav");
 
-if (logoToggle && nav) {
+if (logo && menu) {
 
-    logoToggle.addEventListener("click", function () {
+    logo.addEventListener("click", function (e) {
 
         if (window.innerWidth <= 900) {
 
-            nav.classList.toggle("show-nav");
+            e.stopPropagation();
+
+            menu.classList.toggle("show-nav");
 
         }
+
+    });
+
+    // close when user taps elsewhere
+    document.addEventListener("click", function () {
+
+        if (window.innerWidth <= 900) {
+
+            menu.classList.remove("show-nav");
+
+        }
+
+    });
+
+    menu.addEventListener("click", function (e) {
+
+        e.stopPropagation();
 
     });
 
