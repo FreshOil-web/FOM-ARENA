@@ -3080,6 +3080,39 @@ to{
 
 }
 
+.admin-area{
+    margin-left:auto;
+}
+
+.admin-login{
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    background:#B30000;
+
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    transition:.3s;
+}
+
+.admin-login:hover{
+
+    background:#7b0000;
+
+    transform:scale(1.1);
+}
+
 /* Mobile */
 
 @media(max-width:900px){
@@ -3099,3 +3132,4 @@ to{
     }
 
 }
+
