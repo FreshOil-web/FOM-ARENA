@@ -169,3 +169,31 @@ if(copyright){
 copyright.innerHTML=`© ${new Date().getFullYear()} Fresh Oil Ministries | All Rights Reserved`;
 
 }
+
+const loginBtn = document.getElementById("openLogin");
+const popup = document.getElementById("loginPopup");
+const closeBtn = document.getElementById("closePopup");
+
+loginBtn.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    popup.style.display = "flex";
+
+});
+
+closeBtn.addEventListener("click", function(){
+
+    popup.style.display = "none";
+
+});
+
+window.addEventListener("click", function(e){
+
+    if(e.target === popup){
+
+        popup.style.display = "none";
+
+    }
+
+});

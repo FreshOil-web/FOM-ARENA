@@ -3133,3 +3133,91 @@ to{
 
 }
 
+.popup{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.6);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.popup-content{
+
+    background:white;
+
+    width:360px;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+.popup-content input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:10px 0;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+}
+
+.popup-content button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    background:#B30000;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.popup-content button:hover{
+
+    background:#8a0000;
+
+}
+
+.close-popup{
+
+    position:absolute;
+
+    top:12px;
+
+    right:18px;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
