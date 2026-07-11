@@ -174,26 +174,28 @@ const loginBtn = document.getElementById("openLogin");
 const popup = document.getElementById("loginPopup");
 const closeBtn = document.getElementById("closePopup");
 
-loginBtn.addEventListener("click", function(e){
+if (loginBtn && popup && closeBtn) {
+
+    loginBtn.addEventListener("click", function (e) {
+
+    alert("Button clicked!");
 
     e.preventDefault();
 
     popup.style.display = "flex";
 
 });
+        e.preventDefault();
+        popup.style.display = "flex";
+    };
 
-closeBtn.addEventListener("click", function(){
-
-    popup.style.display = "none";
-
-});
-
-window.addEventListener("click", function(e){
-
-    if(e.target === popup){
-
+    closeBtn.addEventListener("click", function () {
         popup.style.display = "none";
+    });
 
-    }
+    window.addEventListener("click", function (e) {
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    });
 
-});
