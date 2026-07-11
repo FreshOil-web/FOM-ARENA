@@ -54,7 +54,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     </nav>
     <div class="admin-area">
 
-   <a href="#" id="openLogin" class="admin-login">
+   <a href="login.php" class="admin-login" title="Administrator Login">
     <i class="fa-solid fa-user"></i>
 </a>
 
@@ -265,38 +265,6 @@ Be welcomed into a caring community where every person is valued, encouraged, an
 </p>
 
 </footer>
-
-<div id="loginPopup" class="popup">
-
-    <div class="popup-content">
-
-        <span class="close-popup" id="closePopup">&times;</span>
-
-        <h2>Administrator Login</h2>
-
-        <form action="authenticate.php" method="POST">
-
-            <input
-                type="text"
-                name="username"
-                placeholder="Username"
-                required>
-
-            <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                required>
-
-            <button type="submit">
-                Login
-            </button>
-
-        </form>
-
-    </div>
-
-</div>
 
 <script src="script.js"></script>
 
