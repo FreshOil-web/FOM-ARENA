@@ -19,7 +19,7 @@ if (logo && menu) {
 
     });
 
-    // close when user taps elsewhere
+    // Close menu when user taps elsewhere
     document.addEventListener("click", function () {
 
         if (window.innerWidth <= 900) {
@@ -38,134 +38,181 @@ if (logo && menu) {
 
 }
 
-//=========================================
+
+// =========================================
 // ACTIVE NAVIGATION
-//=========================================
+// =========================================
 
-const links=document.querySelectorAll("nav a");
+const links = document.querySelectorAll("nav a");
 
-links.forEach(link=>{
+links.forEach(link => {
 
-if(link.href===window.location.href){
+    if (link.href === window.location.href) {
 
-link.classList.add("active");
+        link.classList.add("active");
 
-}
+    }
 
 });
 
-//=========================================
+
+// =========================================
 // SCROLL TO TOP BUTTON
-//=========================================
+// =========================================
 
-const topButton=document.createElement("button");
+const topButton = document.createElement("button");
 
-topButton.innerHTML="↑";
+topButton.innerHTML = "↑";
 
-topButton.id="topBtn";
+topButton.id = "topBtn";
+
+topButton.setAttribute("aria-label", "Scroll to top");
 
 document.body.appendChild(topButton);
 
-window.addEventListener("scroll",()=>{
 
-if(window.scrollY>300){
+window.addEventListener("scroll", () => {
 
-topButton.style.display="block";
+    if (window.scrollY > 300) {
 
-}else{
+        topButton.style.display = "block";
 
-topButton.style.display="none";
+    } else {
 
-}
+        topButton.style.display = "none";
 
-});
-
-topButton.onclick=()=>{
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
+    }
 
 });
+
+
+topButton.onclick = () => {
+
+    window.scrollTo({
+
+        top: 0,
+        behavior: "smooth"
+
+    });
 
 };
 
-//=========================================
+
+// =========================================
 // SCROLL ANIMATION
-//=========================================
+// =========================================
 
-const observer=new IntersectionObserver(entries=>{
+const observer = new IntersectionObserver(entries => {
 
-entries.forEach(entry=>{
+    entries.forEach(entry => {
 
-if(entry.isIntersecting){
+        if (entry.isIntersecting) {
 
-entry.target.classList.add("show");
+            entry.target.classList.add("show");
 
-}
+        }
 
-});
-
-});
-
-document.querySelectorAll("section").forEach(section=>{
-
-section.classList.add("hidden");
-
-observer.observe(section);
+    });
 
 });
 
-//=========================================
+
+document.querySelectorAll("section").forEach(section => {
+
+    section.classList.add("hidden");
+
+    observer.observe(section);
+
+});
+
+
+// =========================================
 // GALLERY LIGHTBOX
-//=========================================
+// =========================================
 
-const galleryImages=document.querySelectorAll(".gallery-track img");
+const galleryImages = document.querySelectorAll(".gallery-track img");
 
-const lightbox=document.createElement("div");
+const lightbox = document.createElement("div");
 
-lightbox.id="lightbox";
+lightbox.id = "lightbox";
+
+lightbox.innerHTML = `
+
+    <span class="lightbox-close">&times;</span>
+
+    <img id="lightbox-img" src="" alt="Gallery Image">
+
+`;
 
 document.body.appendChild(lightbox);
 
-galleryImages.forEach(image=>{
 
-image.addEventListener("click",()=>{
+const lightboxImage = document.getElementById("lightbox-img");
 
-lightbox.classList.add("active");
+const lightboxClose = document.querySelector(".lightbox-close");
 
-const img=document.createElement("img");
 
-img.src=image.src;
+galleryImages.forEach(image => {
 
-while(lightbox.firstChild){
+    image.addEventListener("click", function () {
 
-lightbox.removeChild(lightbox.firstChild);
+        lightboxImage.src = this.src;
 
-}
+        lightboxImage.alt = this.alt;
 
-lightbox.appendChild(img);
+        lightbox.classList.add("active");
 
-});
+    });
 
 });
 
-lightbox.addEventListener("click",()=>{
 
-lightbox.classList.remove("active");
+// Close button
+
+lightboxClose.addEventListener("click", function (event) {
+
+    event.stopPropagation();
+
+    lightbox.classList.remove("active");
 
 });
 
-//=========================================
+
+// Close when clicking outside the picture
+
+lightbox.addEventListener("click", function (event) {
+
+    if (event.target === lightbox) {
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
+
+
+// Close with Escape key
+
+document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
+
+
+// =========================================
 // FOOTER YEAR
-//=========================================
+// =========================================
 
-const copyright=document.querySelector(".copyright");
+const copyright = document.querySelector(".copyright");
 
-if(copyright){
+if (copyright) {
 
-copyright.innerHTML=`© ${new Date().getFullYear()} Fresh Oil Ministries | All Rights Reserved`;
+    copyright.innerHTML =
+        `© ${new Date().getFullYear()} Fresh Oil Ministries | All Rights Reserved`;
 
 }
